@@ -67,8 +67,8 @@ export default function Home({
           posts?.map(post => (
             <Link href={`/post/${post.uid}`} key={post.uid}>
               <a className={styles.postItem}>
-                <strong>{post?.data?.title}</strong>
-                <h3>{post?.data?.subtitle}</h3>
+                <h2>{post?.data?.title}</h2>
+                <p>{post?.data?.subtitle}</p>
 
                 <div className={styles.postInfo}>
                   <time>
