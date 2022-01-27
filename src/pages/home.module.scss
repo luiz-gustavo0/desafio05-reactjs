@@ -1,1 +1,58 @@
-// TODO
+.container {
+  width: 100%;
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.postItem {
+  width: 100%;
+  display: block;
+
+  & + .postItem {
+    margin-top: 4.8rem;
+  }
+
+  strong {
+    font-weight: bold;
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+    text-align: justify;
+    letter-spacing: -0.5px;
+    color: var(--gray-50);
+  }
+
+  h3 {
+    margin-top: 0.8rem;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--gray-100);
+  }
+}
+
+.postInfo {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+
+  span,
+  time {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--gray-150);
+  }
+}
+
+.maisPosts {
+  display: inline-block;
+  margin-top: 6.4rem;
+  color: var(--pink);
+  font-weight: 600;
+  line-height: 2.2rem;
+  background: none;
+  border: 0;
+}

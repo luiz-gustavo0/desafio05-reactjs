@@ -1,7 +1,39 @@
+:root {
+  --background-color: #1a1d23;
+  --pink: #ff57b2;
+  --gray-50: #f8f8f8;
+  --gray-100: #d7d7d7;
+  --gray-150: #bbbbbb;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// TODO
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.8rem;
+  color: var(--gray-100);
+  background: var(--background-color);
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.8rem;
+}

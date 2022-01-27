@@ -1,1 +1,15 @@
-// TODO
+.header {
+  width: 100%;
+  max-width: 74rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  // background: chartreuse;
+
+  img {
+    max-width: 23.8rem;
+    // height: 2.6rem;
+  }
+}
