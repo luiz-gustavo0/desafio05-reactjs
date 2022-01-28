@@ -62,39 +62,41 @@ export default function Home({
       <Head>
         <title>Spacetraveling | Home</title>
       </Head>
-      <main className={styles.container}>
-        {posts &&
-          posts?.map(post => (
-            <Link href={`/post/${post.uid}`} key={post.uid}>
-              <a className={styles.postItem}>
-                <h2>{post?.data?.title}</h2>
-                <p>{post?.data?.subtitle}</p>
+      <main className={commonStyles.container}>
+        <div className={styles.content}>
+          {posts &&
+            posts?.map(post => (
+              <Link href={`/post/${post.uid}`} key={post.uid}>
+                <a className={styles.postItem}>
+                  <h2>{post?.data?.title}</h2>
+                  <p>{post?.data?.subtitle}</p>
 
-                <div className={styles.postInfo}>
-                  <time>
-                    <FaCalendarAlt size={14} color="#BBBBBB" />
-                    {format(
-                      new Date(post.first_publication_date),
-                      'dd MMM yyyy'
-                    )}
-                  </time>
-                  <span>
-                    <FaUserAlt size={14} color="#BBBBBB" />
-                    {post?.data?.author}
-                  </span>
-                </div>
-              </a>
-            </Link>
-          ))}
-        {nextPage && (
-          <button
-            type="button"
-            onClick={fetchPosts}
-            className={styles.maisPosts}
-          >
-            Carregar mais posts
-          </button>
-        )}
+                  <div className={styles.postInfo}>
+                    <time>
+                      <FaCalendarAlt size={14} color="#BBBBBB" />
+                      {format(
+                        new Date(post.first_publication_date),
+                        'dd MMM yyyy'
+                      )}
+                    </time>
+                    <span>
+                      <FaUserAlt size={14} color="#BBBBBB" />
+                      {post?.data?.author}
+                    </span>
+                  </div>
+                </a>
+              </Link>
+            ))}
+          {nextPage && (
+            <button
+              type="button"
+              onClick={fetchPosts}
+              className={styles.maisPosts}
+            >
+              Carregar mais posts
+            </button>
+          )}
+        </div>
       </main>
     </>
   );

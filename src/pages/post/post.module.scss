@@ -1,1 +1,107 @@
-// TODO
+.postBanner {
+  object-fit: cover;
+  height: 40rem;
+}
+
+.postContent {
+  padding-top: 8rem;
+
+  h1 {
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    color: var(--gary-50);
+    letter-spacing: -0.5px;
+  }
+}
+
+.postInfo {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+
+  span,
+  time {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--gray-150);
+  }
+}
+
+.postEdited {
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: var(--gray-150);
+  font-style: italic;
+}
+
+.postBody {
+  margin-top: 6rem;
+
+  h2 {
+    font-size: 3.6rem;
+    line-height: 140%;
+    font-weight: bold;
+    color: var(--gary-50);
+    margin: 4rem 0;
+  }
+
+  p {
+    line-height: 140%;
+    text-align: justify;
+    color: var(--gray-100);
+
+    & + p {
+      margin-top: 3rem;
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  max-width: 70rem;
+  margin: 6rem auto 0;
+  border-top: 1px solid var(--gray-100);
+  opacity: 0.2;
+}
+
+.postLinks {
+  margin-top: 4.8rem;
+  display: flex;
+  // align-items: center;
+}
+
+.prevPost h3,
+.nextPost h3 {
+  line-height: 2.2rem;
+  color: var(--gary-50);
+  margin-bottom: 0.8rem;
+}
+
+.prevPost a,
+.nextPost a {
+  color: var(--pink);
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.5px;
+}
+
+.nextPost {
+  text-align: right;
+  margin-left: auto;
+}
+
+.prevPost {
+  margin-right: auto;
+}
+
+.comments {
+  width: 100%;
+  padding: 6rem 0;
+}
