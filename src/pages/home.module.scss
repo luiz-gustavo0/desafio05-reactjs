@@ -17,6 +17,11 @@
     text-align: justify;
     letter-spacing: -0.5px;
     color: var(--gray-50);
+
+    @media (max-width: 600px) {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
   }
 
   p {
@@ -41,6 +46,18 @@
     align-items: center;
     gap: 0.8rem;
     color: var(--gray-150);
+  }
+
+  @media (max-width: 600px) {
+    span,
+    time {
+      font-size: 1.2rem;
+    }
+
+    svg {
+      width: 12px;
+      height: 12px;
+    }
   }
 }
 
